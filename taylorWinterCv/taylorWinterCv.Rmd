@@ -1,0 +1,107 @@
+---
+name: Taylor Winter
+position: "Statistical Analyst"
+#address: "203/42 Constable Street, Newtown, Wellington"
+phone: +64 22 171 1260
+email: "taylor.winter00@gmail.com"
+headcolor: 414141
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(vitae)
+
+Sys.getenv("ORCID_TOKEN")
+```
+
+# Summary
+
+I currently work providing statistical advice and conducting analytics for Stats NZ and Ngāi Tahu (a large South Island iwi). I have extensive experience working on a range of survey and administrative datasets, mainly using a large data warehouse of Government data called the Integrated Data Infrastructure (IDI). In the last two years I have also been learning and applying Bayesian techniques. I have worked on a range of projects from producing statistics at low levels using multi-level Bayesian models, and developing imputation methods for New Zealands new poverty statistics.
+
+Alongside my work, I also study a PhD part-time. In my academic work I conduct research using a range of longitudinal datasets and national surveys. This has lead to a significant increase in my exposure to structural equation models and multi-level modelling, with a number of publications currently in review or preparation.
+ 
+# Employment
+
+```{r employment}
+work <- rorcid::orcid_employments("0000-0001-5097-9163")
+
+work$`0000-0001-5097-9163`$`employment-summary` %>%
+  detailed_entries(
+    what = `role-title`,
+    where = ifelse(is.na(`end-date.year.value`),
+                  glue::glue("{`start-date.year.value`} - Present"),
+                  glue::glue("{`start-date.year.value`} - {`end-date.year.value`}")
+                  ),
+    with = organization.name,
+    #where = organization.address.city
+  )
+```
+ 
+# Education
+
+```{r education}
+edu <- rorcid::orcid_educations("0000-0001-5097-9163")
+
+edu$`0000-0001-5097-9163`$`education-summary` %>% 
+  detailed_entries(
+    what = `role-title`, 
+    when = ifelse(is.na(`end-date.year.value`),
+                  "Present",
+                  glue::glue("{`end-date.year.value`}")
+                  ),
+    with = organization.name,
+    where = organization.address.city
+  )
+```
+
+# Awards and scholarships
+
+```{r awards}
+tribble(
+  ~award, ~from, ~year,
+  "IPANZ Young Professional Of The Year (Top 3)", "Institute of Public Administration NZ", "2018",
+  "Victoria Doctoral Scholarship (Differed)", "Victoria University of Wellington", "2018",
+  "Otago Research Master's Scholarship", "University of Otago", "2015"
+) %>%
+  brief_entries(award, year, from)
+```
+
+# Publications
+
+```{r publications}
+bibliography_entries("../pubs.bib")
+
+```
+
+# Presentations and posters
+
+```{r presentations}
+tribble(
+  ~who, ~date, ~where,
+  "Using overseas surveys to produce reliable models of sexual minorities", "2019", "New Zealand Population Conference, Wellington",
+  "Alcohol use disparities among gender and sexual minorities in New Zealand (Poster)", "2019", "Collaborative Perspectives on Addiction, Rhode Island",
+  "Iwi data tool using integrated data and R Shiny", "2017", "Iwi Data Conference, Christchurch",
+  "Using data to support a collective impact model of Māori potential", "2016", "Population Association of New Zealand Conference, Christchurch",
+  "The effect of motherhood on income", "2016", "New Zealand Association of Economists conference, Wellington",
+  "A machine learning approach to classifying life course outcomes", "2016", "Longitudinal and multivariate analysis network (Stats NZ), Wellington",
+  "Methodology for comparing incomes between parents and non-parents", "2016", "Statistical methods seiminar (Stats NZ), Wellington",
+  "Inter-hemispheric inhibition in the autistic brain", "2014", "Neuroethics seminar, Dunedin"
+) %>%
+  detailed_entries(with = who, what = where, where = date)
+```
+
+# Skills
+
+* Languages such as SQL, R, Python, SAS, SPSS Syntax, Bash
+* Structural equation modelling and causal analysis
+* Bayesian statistics, using _brms_ in R (Stan backend)
+* Machine learning techniques such as random forests and neural nets
+* Strong background using big data, i.e. the Integrated Data Infrastructure (IDI) at Stats NZ
+* Knowledge of Tikanga Māori
+
+# Referees
+
+Available on request
