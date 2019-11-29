@@ -19,9 +19,9 @@ Sys.getenv("ORCID_TOKEN")
 
 # Summary
 
-I am currently studying a PhD at the University of Victoria Wellington. My research is in health psychology, focusing on how mood can be influenced by physiological and environmental factors such as the gut-microbiome and experiences of discrimination. Work has led to a broad range of experience in statistical methods including structural equation modelling, multi-level modelling, and Bayesian methods. In particular, this experience has led to a tutorial article on informed Bayesian analysis, and the development of statistical software to make complex techniques more accesible.
+I am currently studying a PhD at the University of Victoria Wellington. My research is in health psychology, focusing on how mood can be influenced by physiological and environmental factors such as the gut-microbiome and experiences of discrimination. Work has led to a broad range of experience in statistical methods including structural equation modelling, multi-level modelling, and Bayesian methods. As part of my study, I have also sought to share some of my statistical knowledge as evidenced by a tutorial article on informed Bayesian analysis, and the development of statistical software to make complex techniques more accesible.
 
-I also work with Stats NZ and Ngāi Tahu providing statistical advice and conducting analytics. I have extensive experience working on a range of survey and administrative datasets, mainly using a large data warehouse of Government data called the Integrated Data Infrastructure (IDI). My background is in Bayesian modelling and big data. I have worked on a range of projects including the development of official statistics for government and pipeline development for cellphone data from Spark and Vodafone.
+I also work with Stats NZ and Ngāi Tahu providing statistical advice and conducting analytics. My specialty is Bayesian modelling and big data. This has led to me developing skill in reproducible workflows and project management techniques which I can bring to an academic role. Example projects include heading the development of an official statistic on poverty and pipeline development for cellphone data from Spark and Vodafone.
 
 # Employment
 

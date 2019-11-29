@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.8.11)  7 NOV 2019 21:48
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.8.11)  29 NOV 2019 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1428,6 +1428,12 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 16.0pt on input line 174.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/bx/n' will be
 (Font)              scaled to size 16.0pt on input line 174.
+
+Overfull \hbox (3.01793pt too wide) in paragraph at lines 178--179
+[]\TU/SourceSansPro(0)/m/n/10.95 I also work with Stats NZ and Ngāi Tahu provid
+ing statistical advice and conducting analytics. My specialty is Bayesian
+ []
+
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 183.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/bx/n' will be
@@ -1488,7 +1494,7 @@ Package logreq Info: Writing requests to 'taylorWinterCv_academic.run.xml'.
 Here is how much of TeX's memory you used:
  47564 strings out of 494894
  946457 string characters out of 6175663
- 1523816 words of memory out of 5000000
+ 1523804 words of memory out of 5000000
  50912 multiletter control sequences out of 15000+600000
  536557 words of font info for 104 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
