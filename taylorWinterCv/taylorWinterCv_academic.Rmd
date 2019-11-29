@@ -1,9 +1,9 @@
 ---
 name: Taylor Winter
-position: "Senior Data Scientist"
+position: "PhD Candidate"
 #address: "203/42 Constable Street, Newtown, Wellington"
 phone: +64 22 171 1260
-email: "taylor.winter00@gmail.com"
+email: "taylor.winter@vuw.ac.nz"
 headcolor: 414141
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
