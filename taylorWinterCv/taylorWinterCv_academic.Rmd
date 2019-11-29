@@ -19,7 +19,7 @@ Sys.getenv("ORCID_TOKEN")
 
 # Summary
 
-I am currently studying a PhD at the University of Victoria Wellington. My research is in health psychology, focusing on how mood can be influenced by physiological and environmental factors such as the gut-microbiome and experiences of discrimination. Work has led to a broad range of experience in statistical methods including structural equation modelling, multi-level modelling, and Bayesian methods. As part of my study, I have also sought to share some of my statistical knowledge as evidenced by a tutorial article on informed Bayesian analysis, and the development of statistical software to make complex techniques more accesible.
+I am currently studying a PhD at the University of Victoria, Wellington. My research is in health psychology, focusing on the influence of physiological and environmental factors on mood, such as the gut-microbiome and experiences of discrimination. Work has led to a broad range of experience in statistical methods including structural equation modelling, multi-level modelling, and Bayesian methods. As part of my study, I also share my statistical knowledge via means such as a tutorial article on informed Bayesian analysis, and the development of statistical software to make complex techniques more accesible.
 
 I also work with Stats NZ and Ngāi Tahu providing statistical advice and conducting analytics. My specialty is Bayesian modelling and big data. This has led to me developing skill in reproducible workflows and project management techniques which I can bring to an academic role. Example projects include heading the development of an official statistic on poverty and pipeline development for cellphone data from Spark and Vodafone.
 
@@ -95,9 +95,10 @@ tribble(
 
 # Skills
 
-* Languages such as SQL, R, Python, SAS, SPSS Syntax, Bash
+* Health psychology research
+* Research design and analysis
 * Structural equation modelling and causal analysis
-* Bayesian statistics, using _brms_ in R (Stan backend)
+* Bayesian statistics and multi-level modelling
 * Machine learning techniques such as random forests and neural nets
-* Strong background using big data, i.e. the Integrated Data Infrastructure (IDI) at Stats NZ
+* Teaching reproducible research practices and statistics
 * Knowledge of Tikanga Māori
