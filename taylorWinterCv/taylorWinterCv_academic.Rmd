@@ -19,10 +19,10 @@ Sys.getenv("ORCID_TOKEN")
 
 # Summary
 
-I currently work providing statistical advice and conducting analytics for Stats NZ and Ngāi Tahu (a large South Island iwi). I have extensive experience working on a range of survey and administrative datasets, mainly using a large data warehouse of Government data called the Integrated Data Infrastructure (IDI). My background is in Bayesian multi-level modelling and structural equation modelling. I have worked on a range of projects including the development of official statistics for government and big data pipeline development with Spark and Vodafone.
+I am currently studying a PhD at the University of Victoria Wellington. My research is in health psychology, focusing on how mood can be influenced by physiological and environmental factors such as the gut-microbiome and experiences of discrimination. Work has led to a broad range of experience in statistical methods including structural equation modelling, multi-level modelling, and Bayesian methods. In particular, this experience has led to a tutorial article on informed Bayesian analysis, and the development of statistical software to make complex techniques more accesible.
 
-In my academic work I conduct research using a range of longitudinal datasets, daily diary studies, and national surveys. This has lead to a significant increase in my exposure to structural equation models and multi-level modelling, with a number of publications currently in review or preparation. Alongside my research, I am also developing software to make advanced structural equation modelling more accessible to users without advanced programming and statistical knowledge.
- 
+I also work with Stats NZ and Ngāi Tahu providing statistical advice and conducting analytics. I have extensive experience working on a range of survey and administrative datasets, mainly using a large data warehouse of Government data called the Integrated Data Infrastructure (IDI). My background is in Bayesian modelling and big data. I have worked on a range of projects including the development of official statistics for government and pipeline development for cellphone data from Spark and Vodafone.
+
 # Employment
 
 ```{r employment}
