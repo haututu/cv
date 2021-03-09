@@ -87,7 +87,7 @@ bibliography_entries("../pubs.bib")
 ```{r presentations}
 tribble(
   ~who, ~date, ~where,
-  "Authoritarian submission on the left and right during the covid-19 pandemic in New Zealand", "2020", "New Zealand Psychological Society Conference, Wellington"
+  "Authoritarian submission on the left and right during the covid-19 pandemic in New Zealand", "2020", "New Zealand Psychological Society Conference, Wellington",
   "Using overseas surveys to produce reliable models of sexual minorities", "2019", "New Zealand Population Conference, Wellington",
   "Alcohol use disparities among gender and sexual minorities in New Zealand (Poster)", "2019", "Collaborative Perspectives on Addiction, Rhode Island",
   "Iwi data tool using integrated data and R Shiny", "2017", "Iwi Data Conference, Christchurch",
