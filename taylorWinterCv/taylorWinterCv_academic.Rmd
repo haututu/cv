@@ -14,7 +14,6 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(tidyverse)
 library(vitae)
 
-Sys.getenv("ORCID_TOKEN")
 ```
 
 # Summary
@@ -26,9 +25,12 @@ I also work with Stats NZ and Ngāi Tahu providing statistical advice and conduc
 # Employment
 
 ```{r employment}
-work <- rorcid::orcid_employments("0000-0001-5097-9163")
+work <- do.call("bind_rows",
+  rorcid::orcid_employments("0000-0001-5097-9163")$`0000-0001-5097-9163`$`affiliation-group`$summaries
+) %>%
+  rename_all(function(x){gsub("employment-summary.", "", x)})
 
-work$`0000-0001-5097-9163`$`employment-summary` %>%
+work %>%
   detailed_entries(
     what = `role-title`,
     where = ifelse(is.na(`end-date.year.value`),
@@ -43,9 +45,13 @@ work$`0000-0001-5097-9163`$`employment-summary` %>%
 # Education
 
 ```{r education}
-edu <- rorcid::orcid_educations("0000-0001-5097-9163")
 
-edu$`0000-0001-5097-9163`$`education-summary` %>% 
+edu <- do.call("bind_rows",
+  rorcid::orcid_educations("0000-0001-5097-9163")$`0000-0001-5097-9163`$`affiliation-group`$summaries
+) %>%
+  rename_all(function(x){gsub("education-summary.", "", x)})
+
+edu %>% 
   detailed_entries(
     what = `role-title`, 
     when = ifelse(is.na(`end-date.year.value`),
@@ -63,7 +69,7 @@ edu$`0000-0001-5097-9163`$`education-summary` %>%
 tribble(
   ~award, ~from, ~year,
   "IPANZ Young Professional Of The Year (Top 3)", "Institute of Public Administration NZ", "2018",
-  "Victoria Doctoral Scholarship (Differed)", "Victoria University of Wellington", "2018",
+  "Victoria Doctoral Scholarship", "Victoria University of Wellington", "2018",
   "Otago Research Master's Scholarship", "University of Otago", "2015"
 ) %>%
   brief_entries(award, year, from)
@@ -81,6 +87,7 @@ bibliography_entries("../pubs.bib")
 ```{r presentations}
 tribble(
   ~who, ~date, ~where,
+  "Authoritarian submission on the left and right during the covid-19 pandemic in New Zealand", "2020", "New Zealand Psychological Society Conference, Wellington"
   "Using overseas surveys to produce reliable models of sexual minorities", "2019", "New Zealand Population Conference, Wellington",
   "Alcohol use disparities among gender and sexual minorities in New Zealand (Poster)", "2019", "Collaborative Perspectives on Addiction, Rhode Island",
   "Iwi data tool using integrated data and R Shiny", "2017", "Iwi Data Conference, Christchurch",
