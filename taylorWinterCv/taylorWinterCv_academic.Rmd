@@ -18,7 +18,7 @@ library(vitae)
 
 # Summary
 
-I am currently studying a PhD at the University of Victoria, Wellington. My research is in health psychology, focusing on the influence of physiological and environmental factors on mood, such as the gut-microbiome and experiences of discrimination. Work has led to a broad range of experience in statistical methods including structural equation modelling, multi-level modelling, and Bayesian methods. As part of my study, I also share my statistical knowledge via means such as a tutorial article on informed Bayesian analysis, and the development of statistical software to make complex techniques more accesible.
+I am currently studying a PhD at the University of Victoria, Wellington while also working as a statistician at Statistics New Zealand. My core research is in social psychology, focusing on authoritarianism . Work has led to a broad range of experience in statistical methods including structural equation modelling, multi-level modelling, and Bayesian methods. As part of my study, I also share my statistical knowledge via means such as a tutorial article on informed Bayesian analysis, and the development of statistical software to make complex techniques more accesible.
 
 I also work with Stats NZ and Ngāi Tahu providing statistical advice and conducting analytics. My specialty is Bayesian modelling and big data. This has led to me developing skill in reproducible workflows and project management techniques which I can bring to an academic role. Example projects include heading the development of an official statistic on poverty and pipeline development for cellphone data from Spark and Vodafone.
 
@@ -67,12 +67,12 @@ edu %>%
 
 ```{r awards}
 tribble(
-  ~award, ~from, ~year,
+  ~award, ~with, ~year,
   "IPANZ Young Professional Of The Year (Top 3)", "Institute of Public Administration NZ", "2018",
   "Victoria Doctoral Scholarship", "Victoria University of Wellington", "2018",
   "Otago Research Master's Scholarship", "University of Otago", "2015"
 ) %>%
-  brief_entries(award, year, from)
+  brief_entries(what=award, when=year, with=with)
 ```
 
 # Publications
