@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.3.10)  10 MAR 2021 21:24
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.3.10)  10 MAR 2021 23:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,42 +1350,36 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 16.0pt on input line 174.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 16.0pt on input line 174.
-
-Overfull \hbox (3.3683pt too wide) in paragraph at lines 178--179
-[]\TU/SourceSansPro(0)/m/n/10.95 I also work with Stats NZ and Ngāi Tahu provid
-ing statistical advice and conducting analytics. My specialty is Bayesian
- []
-
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 183.
+(Font)              scaled to size 10.0pt on input line 181.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 183.
+(Font)              scaled to size 10.0pt on input line 181.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 183.
+(Font)              scaled to size 9.0pt on input line 181.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 183.
+t line 181.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 183.
+(Font)              scaled to size 9.0pt on input line 181.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 183.
+(Font)              scaled to size 8.0pt on input line 181.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 183.
+(Font)              scaled to size 8.0pt on input line 181.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 183.
+(Font)              scaled to size 8.0pt on input line 181.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 183.
+t line 181.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 183.
+(Font)              scaled to size 8.0pt on input line 181.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 193.
+(Font)              scaled to size 9.0pt on input line 191.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 193.
+(Font)              scaled to size 9.0pt on input line 191.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 220.
+(Font)              scaled to size 10.0pt on input line 218.
 [1
 
 ] [2] [3] (./taylorWinterCv_academic.aux)
@@ -1398,11 +1392,11 @@ Package logreq Info: Writing requests to 'taylorWinterCv_academic.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  38516 strings out of 478944
- 775511 string characters out of 5865765
- 1694685 words of memory out of 5000000
+ 775508 string characters out of 5865765
+ 1692684 words of memory out of 5000000
  57744 multiletter control sequences out of 15000+600000
  407746 words of font info for 112 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 127i,11n,130p,1406b,4910s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 127i,11n,130p,1406b,4911s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on taylorWinterCv_academic.pdf (3 pages).
