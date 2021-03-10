@@ -18,9 +18,7 @@ library(vitae)
 
 # Summary
 
-I am currently studying a PhD at the University of Victoria, Wellington while also working as a statistician at Statistics New Zealand. My core research is in social psychology, focusing on authoritarianism . Work has led to a broad range of experience in statistical methods including structural equation modelling, multi-level modelling, and Bayesian methods. As part of my study, I also share my statistical knowledge via means such as a tutorial article on informed Bayesian analysis, and the development of statistical software to make complex techniques more accesible.
-
-I also work with Stats NZ and Ngāi Tahu providing statistical advice and conducting analytics. My specialty is Bayesian modelling and big data. This has led to me developing skill in reproducible workflows and project management techniques which I can bring to an academic role. Example projects include heading the development of an official statistic on poverty and pipeline development for cellphone data from Spark and Vodafone.
+I am currently studying my PhD at the University of Victoria, Wellington while also working as a Senior Data Scientist at New Zealand's national statistics agency (Statistics NZ). My main line of research in my PhD investigates changes in authoritarian under varying levels of threat due to COVID-19. Through my research and current work commitments, I have a broad range of experience in statistical methods including structural equation modeling, multi-level modeling, and Bayesian methods.
 
 # Employment
 
@@ -103,6 +101,7 @@ tribble(
 # Skills
 
 * Health psychology research
+* Social psychology research
 * Research design and analysis
 * Structural equation modelling and causal analysis
 * Bayesian statistics and multi-level modelling
