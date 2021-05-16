@@ -18,7 +18,7 @@ library(vitae)
 
 # Summary
 
-I am currently working toward my PhD at the University of Victoria at Wellington while also working as a Senior Data Scientist at New Zealand’s national statistics agency (Statistics NZ). My main line of research in my PhD is devoted to investigating changes in authoritarianism under varying levels of threat due to COVID 19. Generally my research is concerned with the application of psychological methods and theory on research and interventions designed to promote health and wellbeing. Through my research and current work commitments, I have a broad range of experience in statistical methods including structural equation modeling, multi level modeling, and Bayesian methods.
+I am currently working toward my PhD at the University of Victoria at Wellington while also working as a Senior Data Scientist at New Zealand’s national statistics agency (Statistics NZ). My main line of research in my PhD is devoted to investigating changes in authoritarianism under varying levels of threat due to COVID-19. Alongside my primary PhD focus, I actively investigate the minority stress framework that seeks to explain how experiences of discrimination result in poor psychological outcomes, such as Māori, sexual minorities, or both, e.g., takatāpui. More broadly, my research is concerned with the application of psychological methods and theory on research and interventions designed to promote health and wellbeing. Through my research and current work commitments, I have a broad range of experience in statistical methods including structural equation modeling, multilevel modeling, and Bayesian methods.
 
 # Employment
 
@@ -100,6 +100,7 @@ tribble(
 
 # Skills
 
+* Knowledge of Tikanga Māori
 * Health psychology research
 * Social psychology research
 * Research design and analysis
@@ -107,4 +108,3 @@ tribble(
 * Bayesian statistics and multi-level modelling
 * Machine learning techniques such as random forests and neural nets
 * Teaching reproducible research practices and statistics
-* Knowledge of Tikanga Māori
