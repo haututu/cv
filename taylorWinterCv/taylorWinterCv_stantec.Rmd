@@ -1,0 +1,110 @@
+---
+name: Taylor Winter
+position: "Senior Data Scientist"
+#address: "203/42 Constable Street, Newtown, Wellington"
+phone: +64 22 171 1260
+email: "taylor.winter@vuw.ac.nz"
+headcolor: 414141
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(vitae)
+
+```
+
+# Summary
+
+I am currently the Senior Data Scientist within Data Ventures, the commercial arm of New Zealand’s national statistics agency (Statistics NZ). In this line of work I am responsible for the quality, methodology, and processing of large datasets such as telecommunications data, EFTPOS data, and banking data. As well as technical obligations, my role also has a heavy consultancy focus, whereby I am required to work closely with a variety of customers to understand their needs around data. Alongside my work, I am concurrently conducting a PhD in Psychology with a strong focus on structural equation modeling of longitudinal datasets. Through my combination of work and studies, I have a broad range of experience in advanced statistical methods and the ability to productionise my methods in a cloud environment. Previous to my current role, I worked extensively producing analytics with a large data warehouse of Government data called the Integrated Data Infrastructure (IDI; a person-level linked database of most government administrative data).
+
+# Employment
+
+```{r employment}
+work <- do.call("bind_rows",
+  rorcid::orcid_employments("0000-0001-5097-9163")$`0000-0001-5097-9163`$`affiliation-group`$summaries
+) %>%
+  rename_all(function(x){gsub("employment-summary.", "", x)})
+
+work %>%
+  detailed_entries(
+    what = `role-title`,
+    where = ifelse(is.na(`end-date.year.value`),
+                  glue::glue("{`start-date.year.value`} - Present"),
+                  glue::glue("{`start-date.year.value`} - {`end-date.year.value`}")
+                  ),
+    with = organization.name,
+    #where = organization.address.city
+  )
+```
+ 
+# Education
+
+```{r education}
+
+edu <- do.call("bind_rows",
+  rorcid::orcid_educations("0000-0001-5097-9163")$`0000-0001-5097-9163`$`affiliation-group`$summaries
+) %>%
+  rename_all(function(x){gsub("education-summary.", "", x)})
+
+edu %>% 
+  detailed_entries(
+    what = `role-title`, 
+    when = ifelse(is.na(`end-date.year.value`),
+                  "Present",
+                  glue::glue("{`end-date.year.value`}")
+                  ),
+    with = organization.name,
+    where = organization.address.city
+  )
+```
+
+# Awards and scholarships
+
+```{r awards}
+tribble(
+  ~award, ~with, ~year,
+  "IPANZ Young Professional Of The Year (Top 3)", "Institute of Public Administration NZ", "2018",
+  "Victoria Doctoral Scholarship", "Victoria University of Wellington", "2018",
+  "Otago Research Master's Scholarship", "University of Otago", "2015"
+) %>%
+  brief_entries(what=award, when=year, with=with)
+```
+
+# Publications
+
+```{r publications}
+bibliography_entries("../pubs.bib")
+
+```
+
+# Presentations and posters
+
+```{r presentations}
+tribble(
+  ~who, ~date, ~where,
+  "Authoritarian submission on the left and right during the covid-19 pandemic in New Zealand", "2020", "New Zealand Psychological Society Conference, Wellington",
+  "Using overseas surveys to produce reliable models of sexual minorities", "2019", "New Zealand Population Conference, Wellington",
+  "Alcohol use disparities among gender and sexual minorities in New Zealand (Poster)", "2019", "Collaborative Perspectives on Addiction, Rhode Island",
+  "Iwi data tool using integrated data and R Shiny", "2017", "Iwi Data Conference, Christchurch",
+  "Using data to support a collective impact model of Māori potential", "2016", "Population Association of New Zealand Conference, Christchurch",
+  "The effect of motherhood on income", "2016", "New Zealand Association of Economists conference, Wellington",
+  "A machine learning approach to classifying life course outcomes", "2016", "Longitudinal and multivariate analysis network (Stats NZ), Wellington",
+  "Methodology for comparing incomes between parents and non-parents", "2016", "Statistical methods seiminar (Stats NZ), Wellington",
+  "Inter-hemispheric inhibition in the autistic brain", "2014", "Neuroethics seminar, Dunedin"
+) %>%
+  detailed_entries(with = who, what = where, where = date)
+```
+
+# Skills
+
+* Research design and analysis
+* Structural equation modelling and causal analysis
+* Bayesian statistics and multi-level modelling
+* Machine learning techniques such as random forests and neural nets
+* Cloud infrastructure experience via AWS
+* Teaching reproducible research practices and statistics
+* Health and Social psychology research
+* Knowledge of Tikanga Māori
